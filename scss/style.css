@@ -105,11 +105,11 @@ body .upper .small .opitions img {
 }
 
 body .upper .small .opitions img:nth-child(1) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 body .upper .small .opitions img:nth-child(2) {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 body .upper .small .content {
