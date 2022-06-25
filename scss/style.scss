@@ -2,9 +2,10 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "League Spartan", sans-serif;
 }
 body {
-  font-size: 1.5em;
+  font-size: 1em;
   height: 100vh;
   .upper {
     display: grid;
@@ -15,10 +16,14 @@ body {
       background-size: cover;
       nav {
         display: flex;
-        // justify-content: space-between;
+        font-size: 1.3em;
         align-items: center;
         margin-left: 50px;
-        padding: 10px;
+        padding: 40px;
+        .currentTitle{
+          font-size: 2em;
+          color: white;
+        }
         ul {
           margin-left: 50px;
           li {
@@ -60,16 +65,34 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      .opitions{
+        background-color: black;
+        padding: 20px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        img{
+          cursor: pointer;
+          width: 20px;
+          &:nth-child(1){
+            margin-right: 10px;
+          }
+          &:nth-child(2){
+            margin-left: 10px;
+          }
+        }
+      }
       .content {
-        width: 90%;
+        width: 70%;
         p {
           line-height: 130%;
           span {
-            font-size: 50px;
+            font-size: 2em;
             line-height: 130%;
             display: block;
-            font-weight: bold;
-            margin-bottom: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
           }
         }
         button {
@@ -90,9 +113,33 @@ body {
     .grid-container-3 {
       display: grid;
       grid-template-columns: 1fr 35% 1fr;
-      div{
-        img{
-            width:100%;
+      div {
+        height: 35vh;
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        span {
+          font-size: 1em;
+          display: block;
+          margin-bottom: 20px;
+          font-weight: 800;
+          letter-spacing: 5px;
+          word-spacing: 5px;
+          text-transform: uppercase;
+        }
+        p {
+          line-height: 130%;
         }
       }
     }

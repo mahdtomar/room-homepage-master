@@ -3,10 +3,11 @@
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "League Spartan", sans-serif;
 }
 
 body {
-  font-size: 1.5em;
+  font-size: 1em;
   height: 100vh;
 }
 
@@ -27,11 +28,17 @@ body .upper .big nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.3em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-left: 50px;
-  padding: 10px;
+  padding: 40px;
+}
+
+body .upper .big nav .currentTitle {
+  font-size: 2em;
+  color: white;
 }
 
 body .upper .big nav ul {
@@ -81,10 +88,32 @@ body .upper .small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+body .upper .small .opitions {
+  background-color: black;
+  padding: 20px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+body .upper .small .opitions img {
+  cursor: pointer;
+  width: 20px;
+}
+
+body .upper .small .opitions img:nth-child(1) {
+  margin-right: 10px;
+}
+
+body .upper .small .opitions img:nth-child(2) {
+  margin-left: 10px;
 }
 
 body .upper .small .content {
-  width: 90%;
+  width: 70%;
 }
 
 body .upper .small .content p {
@@ -92,11 +121,11 @@ body .upper .small .content p {
 }
 
 body .upper .small .content p span {
-  font-size: 50px;
+  font-size: 2em;
   line-height: 130%;
   display: block;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 body .upper .small .content button {
@@ -121,7 +150,44 @@ body .lower .grid-container-3 {
       grid-template-columns: 1fr 35% 1fr;
 }
 
+body .lower .grid-container-3 div {
+  height: 35vh;
+}
+
 body .lower .grid-container-3 div img {
   width: 100%;
+}
+
+body .lower .grid-container-3 .content {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+body .lower .grid-container-3 .content span {
+  font-size: 1em;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+
+body .lower .grid-container-3 .content p {
+  line-height: 130%;
 }
 /*# sourceMappingURL=style.css.map */
