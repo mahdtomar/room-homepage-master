@@ -1,12 +1,69 @@
-const leftArrow =  document.querySelector(".leftarrow")
-const rightArrow =  document.querySelector(".rightarrow")
-let themeArray = ["images\desktop-image-hero-1.jpg","images\desktop-image-hero-2.jpg","images\desktop-image-hero-3.jpg"]
-let current = 0;
+let navigationArrows = document.querySelectorAll(".arrow");
+const mainImage = document.querySelector(".big");
 
-leftArrow.addEventListener("click",(e)=>{
-    if(current=0){
-    
-    }
-})
+navigationArrows[0].addEventListener("click", () => {
+  navigations("left");
+});
+navigationArrows[1].addEventListener("click", () => {
+  navigations("right");
+});
 
-console.log(current)
+function navigations(e) {
+  console.log(e);
+  let array = getComputedStyle(mainImage);
+  let numberPosition = array.backgroundImage.split("");
+  globalThis.Url = numberPosition.splice(27, numberPosition.length);
+  let neededText = `url("../`;
+  Url.unshift(neededText);
+  e == "left" ? left() : right();
+}
+function left() {
+  let newImage = "";
+  switch (Url[27]) {
+    case "1":
+      Url[27] = "3";
+      newImage = Url.join("");
+      mainImage.style.backgroundImage = `${newImage}`;
+      break;
+
+    case "2":
+      Url[27] = "1";
+      newImage = Url.join("");
+      mainImage.style.backgroundImage = `${newImage}`;
+      break;
+
+    case "3":
+      Url[27] = "2";
+      newImage = Url.join("");
+      mainImage.style.backgroundImage = `${newImage}`;
+      break;
+
+    default:
+      break;
+  }
+}
+function right() {
+  let newImage = "";
+  switch (Url[27]) {
+    case "1":
+      Url[27] = "2";
+      newImage = Url.join("");
+      mainImage.style.backgroundImage = `${newImage}`;
+      break;
+
+    case "2":
+      Url[27] = "3";
+      newImage = Url.join("");
+      mainImage.style.backgroundImage = `${newImage}`;
+      break;
+
+    case "3":
+      Url[27] = "1";
+      newImage = Url.join("");
+      mainImage.style.backgroundImage = `${newImage}`;
+      break;
+
+    default:
+      break;
+  }
+}
