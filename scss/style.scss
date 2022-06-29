@@ -4,10 +4,19 @@
   padding: 0px;
   font-family: "League Spartan", sans-serif;
 }
-body {  
+body {
+  position: relative;
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   font-size: 1em;
   height: 100vh;
   .upper {
+    max-height: 500px;
     display: grid;
     grid-template-columns: 55% 40%;
     height: 65vh;
@@ -20,7 +29,7 @@ body {
         align-items: center;
         margin-left: 50px;
         padding: 40px;
-        .currentTitle{
+        .currentTitle {
           font-size: 2em;
           color: white;
         }
@@ -66,25 +75,26 @@ body {
       justify-content: center;
       align-items: center;
       position: relative;
-      .opitions{
+      .opitions {
         background-color: black;
         padding: 20px;
         position: absolute;
         left: 0px;
         bottom: 0px;
-        img{
+        img {
           cursor: pointer;
           width: 20px;
-          &:nth-child(1){
+          &:nth-child(1) {
             margin-right: 20px;
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-left: 20px;
           }
         }
       }
       .content {
         width: 70%;
+        min-width: 400px;
         p {
           line-height: 130%;
           span {
@@ -108,13 +118,14 @@ body {
     }
   }
   .lower {
+    overflow: hidden;
     width: 100%;
     height: 35vh;
     .grid-container-3 {
       display: grid;
-      grid-template-columns: 1fr 46% 1fr;
+      grid-template-columns: 27% 45% 27%;
       div {
-        height: 35vh;
+        height: 100%;
         img {
           height: 100%;
         }
