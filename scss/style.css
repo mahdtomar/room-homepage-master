@@ -148,6 +148,14 @@ body .upper .small .content button {
   word-spacing: 10px;
   font-size: 25px;
   cursor: pointer;
+  border: 2px solid transparent;
+  padding: 10px;
+  -webkit-transition: border 0.4s;
+  transition: border 0.4s;
+}
+
+body .upper .small .content button:hover {
+  border-color: black;
 }
 
 body .lower {

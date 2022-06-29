@@ -4,7 +4,6 @@ const one = document.querySelector(".content-one")
 const two = document.querySelector(".content-two")
 const three = document.querySelector(".content-three")
 const paragraphContainer = document.querySelector(".content")
-console.log(paragraphContainer)
 navigationArrows[0].addEventListener("click", () => {
   navigations("left");
 });
@@ -13,7 +12,6 @@ navigationArrows[1].addEventListener("click", () => {
 });
 
 function navigations(e) {
-  console.log(e);
   let array = getComputedStyle(mainImage);
   let numberPosition = array.backgroundImage.split("");
   globalThis.Url = numberPosition.splice(27, numberPosition.length);
