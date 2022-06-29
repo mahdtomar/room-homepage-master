@@ -146,8 +146,8 @@ body .lower {
 body .lower .grid-container-3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 35% 1fr;
-      grid-template-columns: 1fr 35% 1fr;
+  -ms-grid-columns: 1fr 46% 1fr;
+      grid-template-columns: 1fr 46% 1fr;
 }
 
 body .lower .grid-container-3 div {
@@ -155,7 +155,7 @@ body .lower .grid-container-3 div {
 }
 
 body .lower .grid-container-3 div img {
-  width: 100%;
+  height: 100%;
 }
 
 body .lower .grid-container-3 .content {
