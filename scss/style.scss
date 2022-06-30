@@ -7,6 +7,7 @@
 body {
   position: relative;
   .container {
+    min-width: 100%;
     width: 100%;
     max-width: 1440px;
     position: absolute;
