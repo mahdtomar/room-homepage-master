@@ -11,7 +11,7 @@ navigationArrows[0].addEventListener("click", () => {
 navigationArrows[1].addEventListener("click", () => {
   navigations("right");
 });
-console.log("this is global !");
+console.log("this is global !",'cases should work');
 function navigations(e) {
   let array = getComputedStyle(mainImage);
   let numberPosition = array.backgroundImage.split("");
