@@ -10,7 +10,7 @@ navigationArrows[0].addEventListener("click", () => {
 navigationArrows[1].addEventListener("click", () => {
   navigations("right");
 });
-
+console.log("global")
 function navigations(e) {
   let array = getComputedStyle(mainImage);
   let numberPosition = array.backgroundImage.split("");
@@ -18,6 +18,7 @@ function navigations(e) {
   let neededText = `url("../`;
   Url.unshift(neededText);
   e == "left" ? left() : right();
+  console.log("eventlistener")
 }
 function left() {
   let newImage = "";
