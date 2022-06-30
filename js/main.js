@@ -20,7 +20,9 @@ function navigations(e) {
   Url.unshift(neededText);
   if (e == "left") {
     left();
+    console.log("left is working")
   } else {
+    console.log("right is working")
     right();
   }
 }
