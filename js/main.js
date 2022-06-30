@@ -4,7 +4,7 @@ const one = document.querySelector(".content-one");
 const two = document.querySelector(".content-two");
 const three = document.querySelector(".content-three");
 const paragraphContainer = document.querySelector(".content");
-console.log(navigationArrows, mainImage,one,two,three,paragraphContainer)
+console.log(navigationArrows, mainImage, one, two, three, paragraphContainer);
 navigationArrows[0].addEventListener("click", () => {
   navigations("left");
 });
@@ -15,72 +15,72 @@ console.log("global");
 function navigations(e) {
   let array = getComputedStyle(mainImage);
   let numberPosition = array.backgroundImage.split("");
-  globalThis.Url = numberPosition.splice(27, numberPosition.length);
+  globalThis.imgPath = numberPosition.splice(27, numberPosition.length);
   let neededText = `url("../`;
-  Url.unshift(neededText);
+  imgPath.unshift(neededText);
   if (e == "left") {
     left();
-    console.log("left is working")
+    console.log("left is working");
   } else {
-    console.log("right is working")
+    console.log("right is working");
     right();
   }
 }
 function left() {
   console.log("left");
   let newImage = "";
-  switch (Url[27]) {
+  switch (imgPath[27]) {
     case "1":
-      Url[27] = "3";
-      newImage = Url.join("");
+      imgPath[27] = "3";
+      newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(three);
       break;
-      
+
     case "2":
-      Url[27] = "1";
-      newImage = Url.join("");
+      imgPath[27] = "1";
+      newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(one);
       break;
-      
+
     case "3":
-      Url[27] = "2";
-      newImage = Url.join("");
+      imgPath[27] = "2";
+      newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(two);
       break;
 
-      default:
-        break;
+    default:
+      break;
   }
 }
 function right() {
   console.log("right");
   let newImage = "";
-  switch (Url[27]) {
+  switch (imgPath[27]) {
     case "1":
-      Url[27] = "2";
-      newImage = Url.join("");
+      imgPath[27] = "2";
+      newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(two);
       break;
 
     case "2":
-      Url[27] = "3";
-      newImage = Url.join("");
+      imgPath[27] = "3";
+      newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(three);
       break;
 
     case "3":
-      Url[27] = "1";
-      newImage = Url.join("");
+      imgPath[27] = "1";
+      newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(one);
