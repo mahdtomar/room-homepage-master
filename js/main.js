@@ -31,22 +31,25 @@ function left() {
   let newImage = "";
   switch (imgPath[27]) {
     case "1":
+      console.log("case 1")
       imgPath[27] = "3";
       newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(three);
       break;
-
-    case "2":
+      
+      case "2":
+      console.log("case 2")
       imgPath[27] = "1";
       newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(one);
       break;
-
-    case "3":
+      
+      case "3":
+      console.log("case 3")
       imgPath[27] = "2";
       newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
@@ -63,23 +66,26 @@ function right() {
   let newImage = "";
   switch (imgPath[27]) {
     case "1":
+      console.log("case 1")
       imgPath[27] = "2";
       newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(two);
       break;
-
-    case "2":
-      imgPath[27] = "3";
-      newImage = imgPath.join("");
-      mainImage.style.backgroundImage = `${newImage}`;
-      paragraphContainer.innerHTML = "";
-      paragraphContainer.appendChild(three);
-      break;
-
-    case "3":
-      imgPath[27] = "1";
+      
+      case "2":
+        console.log("case 2")
+        imgPath[27] = "3";
+        newImage = imgPath.join("");
+        mainImage.style.backgroundImage = `${newImage}`;
+        paragraphContainer.innerHTML = "";
+        paragraphContainer.appendChild(three);
+        break;
+        
+        case "3":
+          console.log("case 3")
+          imgPath[27] = "1";
       newImage = imgPath.join("");
       mainImage.style.backgroundImage = `${newImage}`;
       paragraphContainer.innerHTML = "";
