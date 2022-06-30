@@ -4,6 +4,7 @@ const one = document.querySelector(".content-one");
 const two = document.querySelector(".content-two");
 const three = document.querySelector(".content-three");
 const paragraphContainer = document.querySelector(".content");
+console.log(navigationArrows, mainImage,one,two,three,paragraphContainer)
 navigationArrows[0].addEventListener("click", () => {
   navigations("left");
 });
