@@ -23,9 +23,9 @@ function navigations(e) {
   } else {
     right();
   }
-  console.log("eventlistener");
 }
 function left() {
+  console.log("left");
   let newImage = "";
   switch (Url[27]) {
     case "1":
@@ -35,7 +35,7 @@ function left() {
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(three);
       break;
-
+      
     case "2":
       Url[27] = "1";
       newImage = Url.join("");
@@ -43,7 +43,7 @@ function left() {
       paragraphContainer.innerHTML = "";
       paragraphContainer.appendChild(one);
       break;
-
+      
     case "3":
       Url[27] = "2";
       newImage = Url.join("");
@@ -52,11 +52,12 @@ function left() {
       paragraphContainer.appendChild(two);
       break;
 
-    default:
-      break;
+      default:
+        break;
   }
 }
 function right() {
+  console.log("right");
   let newImage = "";
   switch (Url[27]) {
     case "1":
