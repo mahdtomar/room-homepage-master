@@ -15,7 +15,9 @@ console.log("this is global !",'cases should work');
 function navigations(e) {
   let array = getComputedStyle(mainImage);
   let numberPosition = array.backgroundImage.split("");
+  console.log(numberPosition)
   globalThis.imgPath = numberPosition.splice(27, numberPosition.length);
+  console.log(imgPath)
   let neededText = `url("../`;
   imgPath.unshift(neededText);
   if (e == "left") {
