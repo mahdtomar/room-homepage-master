@@ -228,18 +228,12 @@ body .lower .grid-container-3 .content p {
 }
 
 @media (max-width: 1350px) {
-  body {
-    background-color: red;
-  }
   body .lower .grid-container-3 .content {
     width: 60%;
   }
 }
 
 @media (max-width: 1200px) {
-  body {
-    background-color: bisque;
-  }
   body .upper {
     height: 65vh;
   }
@@ -312,9 +306,6 @@ body .lower .grid-container-3 .content p {
 }
 
 @media (max-width: 768px) {
-  body {
-    background-color: chocolate;
-  }
   body .upper {
     max-height: 4000px;
     display: block;

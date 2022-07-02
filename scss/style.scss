@@ -176,7 +176,6 @@ body {
 }
 @media (max-width: 1350px) {
   body {
-    background-color: red;
     .lower {
       .grid-container-3 {
         .content {
@@ -220,7 +219,6 @@ body {
         }
       }
     }
-    background-color: bisque;
     .lower {
       .grid-container-3 {
         grid-template-columns: 30% 40% 30%;
@@ -260,7 +258,6 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    background-color: chocolate;
     .upper {
       max-height: 4000px;
       display: block;
