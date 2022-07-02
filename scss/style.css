@@ -48,6 +48,10 @@ body .upper .big nav {
   padding: 40px;
 }
 
+body .upper .big nav .icon {
+  display: none;
+}
+
 body .upper .big nav .currentTitle {
   font-size: 2em;
   color: white;
@@ -180,6 +184,16 @@ body .lower .grid-container-3 div img {
   height: 100%;
 }
 
+body .lower .grid-container-3 .light-about {
+  background-image: url(../images/image-about-light.jpg);
+  background-size: cover;
+}
+
+body .lower .grid-container-3 .dark-about {
+  background-image: url(../images/image-about-dark.jpg);
+  background-size: cover;
+}
+
 body .lower .grid-container-3 .content {
   width: 80%;
   position: relative;
@@ -211,5 +225,176 @@ body .lower .grid-container-3 .content span {
 
 body .lower .grid-container-3 .content p {
   line-height: 130%;
+}
+
+@media (max-width: 1350px) {
+  body {
+    background-color: red;
+  }
+  body .lower .grid-container-3 .content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: bisque;
+  }
+  body .upper {
+    height: 65vh;
+  }
+  body .upper .big nav {
+    padding: 20px;
+    margin-left: 0px;
+  }
+  body .upper .small .content {
+    width: 70%;
+    min-width: 80%;
+  }
+  body .upper .small .content p {
+    line-height: 120%;
+  }
+  body .upper .small .content p span {
+    font-size: 2em;
+    line-height: 100%;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  body .upper .small .content button {
+    margin-top: 0px;
+    padding: 10px 0px;
+  }
+  body .upper .small .opitions {
+    padding: 15px;
+  }
+  body .lower .grid-container-3 {
+    -ms-grid-columns: 30% 40% 30%;
+        grid-template-columns: 30% 40% 30%;
+  }
+  body .lower .grid-container-3 div {
+    height: 100%;
+  }
+  body .lower .grid-container-3 div img {
+    height: 100%;
+  }
+  body .lower .grid-container-3 .content {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  body .lower .grid-container-3 .content span {
+    font-size: 1em;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+  }
+  body .lower .grid-container-3 .content p {
+    line-height: 130%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: chocolate;
+  }
+  body .upper {
+    max-height: 4000px;
+    display: block;
+    height: auto;
+  }
+  body .upper .big {
+    background-size: cover;
+    height: 700px;
+  }
+  body .upper .big nav {
+    width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 50px;
+    padding: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .upper .big nav .icon {
+    display: block;
+  }
+  body .upper .big nav ul {
+    display: none;
+  }
+  body .upper .small {
+    height: 400px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .upper .small .opitions {
+    right: 0px;
+    top: -78px;
+    left: auto;
+    bottom: auto;
+  }
+  body .lower {
+    height: auto;
+  }
+  body .lower .grid-container-3 {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  body .lower .grid-container-3 div {
+    height: 480px;
+  }
+  body .lower .grid-container-3 div.content {
+    margin: 30px 0px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .upper .big {
+    background-image: url(../images/mobile-image-hero-1.jpg);
+    height: 450px;
+  }
+  body .upper .big nav {
+    margin: 0px;
+    width: 100%;
+  }
+  body .upper .small .content {
+    width: 90%;
+  }
+  body .upper .small .opitions {
+    top: -68px;
+  }
+  body .lower .grid-container-3 div {
+    height: 250px;
+  }
+  body .lower .grid-container-3 div.content {
+    width: 90%;
+    padding: 0px;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

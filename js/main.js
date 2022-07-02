@@ -5,8 +5,8 @@ const two = document.querySelector(".content-two");
 const three = document.querySelector(".content-three");
 const paragraphContainer = document.querySelector(".content");
 // console.log(navigationArrows, mainImage, one, two, three, paragraphContainer);
-const imageRelativPath = `../images/desktop-image-hero-2.jpg`;
-let someShit = `idk this is some shit${imageRelativPath}`;
+// const imageRelativPath = `../images/desktop-image-hero-2.jpg`;
+// let someShit = `idk this is some shit${imageRelativPath}`;
 // console.log(someShit);
 // console.log(someShit.split("").splice(-34));
 

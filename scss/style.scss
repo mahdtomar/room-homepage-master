@@ -30,6 +30,9 @@ body {
         align-items: center;
         margin-left: 50px;
         padding: 40px;
+        .icon {
+          display: none;
+        }
         .currentTitle {
           font-size: 2em;
           color: white;
@@ -116,8 +119,8 @@ body {
           cursor: pointer;
           border: 2px solid transparent;
           padding: 10px;
-          transition: border 0.4s ;
-          &:hover{
+          transition: border 0.4s;
+          &:hover {
             border-color: black;
           }
         }
@@ -136,6 +139,14 @@ body {
         img {
           height: 100%;
         }
+      }
+      .light-about {
+        background-image: url(../images/image-about-light.jpg);
+        background-size: cover;
+      }
+      .dark-about {
+        background-image: url(../images/image-about-dark.jpg);
+        background-size: cover;
       }
       .content {
         width: 80%;
@@ -158,6 +169,176 @@ body {
         }
         p {
           line-height: 130%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1350px) {
+  body {
+    background-color: red;
+    .lower {
+      .grid-container-3 {
+        .content {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    .upper {
+      height: 65vh;
+      .big {
+        nav {
+          padding: 20px;
+          margin-left: 0px;
+        }
+      }
+      .small {
+        .content {
+          width: 70%;
+          min-width: 80%;
+          p {
+            line-height: 120%;
+            span {
+              font-size: 2em;
+              line-height: 100%;
+              display: block;
+              font-weight: 700;
+              margin-bottom: 10px;
+            }
+          }
+          button {
+            margin-top: 0px;
+            padding: 10px 0px;
+          }
+        }
+        .opitions {
+          padding: 15px;
+        }
+      }
+    }
+    background-color: bisque;
+    .lower {
+      .grid-container-3 {
+        grid-template-columns: 30% 40% 30%;
+        div {
+          height: 100%;
+          img {
+            height: 100%;
+          }
+        }
+        .content {
+          width: 80%;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+          span {
+            font-size: 1em;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: 800;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            text-transform: uppercase;
+          }
+          p {
+            line-height: 130%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: chocolate;
+    .upper {
+      max-height: 4000px;
+      display: block;
+      height: auto;
+      .big {
+        background-size: cover;
+        height: 700px;
+        nav {
+          width: 55%;
+          display: flex;
+          font-size: 1.3em;
+          align-items: center;
+          margin-left: 50px;
+          padding: 40px;
+          justify-content: space-between;
+          .icon {
+            display: block;
+          }
+          ul {
+            display: none;
+          }
+        }
+      }
+      .small {
+        height: 400px;
+        justify-content: center;
+        .opitions {
+          right: 0px;
+          top: -78px;
+          left: auto;
+          bottom: auto;
+        }
+      }
+    }
+    .lower {
+      height: auto;
+      .grid-container-3 {
+        grid-template-columns: 100%;
+        div {
+          height: 480px;
+          &.content {
+            margin: 30px 0px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  body {
+    .upper {
+      .big {
+        background-image: url(../images/mobile-image-hero-1.jpg);
+        height: 450px;
+        nav {
+          margin: 0px;
+          width: 100%;
+        }
+      }
+      .small{
+        .content{
+          width: 90%;
+        }
+        .opitions{
+          top: -68px;
+        }
+      }
+    }
+    .lower {
+      .grid-container-3{
+        div{
+          height: 250px;
+          &.content{
+            width: 90%;
+            padding: 0px;
+            height: 300px;
+          }
         }
       }
     }
