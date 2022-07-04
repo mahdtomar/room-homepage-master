@@ -349,16 +349,24 @@ body .lower .grid-container-3 .content p {
     position: absolute;
     width: 100%;
     left: 0px;
-    top: 0%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    top: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     display: none;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  body .upper .big nav ul.visible {
+    top: 0%;
   }
   body .upper .big nav ul .close-icon {
     display: block;
@@ -428,6 +436,50 @@ body .lower .grid-container-3 .content p {
     width: 90%;
     padding: 0px;
     height: 300px;
+  }
+}
+
+@-webkit-keyframes dropdown {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    top: 0%;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    top: 0%;
+  }
+}
+
+@-webkit-keyframes fadeUp {
+  from {
+    opacity: 1;
+    top: 0%;
+  }
+  to {
+    opacity: 0;
+    top: -100%;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 1;
+    top: 0%;
+  }
+  to {
+    opacity: 0;
+    top: -100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

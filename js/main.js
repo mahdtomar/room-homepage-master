@@ -4,6 +4,9 @@ const one = document.querySelector(".content-one");
 const two = document.querySelector(".content-two");
 const three = document.querySelector(".content-three");
 const paragraphContainer = document.querySelector(".content");
+const ul = document.querySelector(".ul");
+const hamburgerIcon = document.querySelector(".icon");
+const closeIcon = document.querySelector(".close-icon");
 // console.log(navigationArrows, mainImage, one, two, three, paragraphContainer);
 // const imageRelativPath = `../images/desktop-image-hero-2.jpg`;
 // let someShit = `idk this is some shit${imageRelativPath}`;
@@ -151,3 +154,14 @@ function right() {
       break;
   }
 }
+
+hamburgerIcon.addEventListener("click", () => {
+  ul.style.display = "flex";
+  ul.style.animationName = "dropdown";
+  ul.classList.add("visible");
+});
+closeIcon.addEventListener("click", () => {
+  ul.classList.remove("visible");
+  ul.style.animationName = "fadeUp";
+  // setTimeout(()=>{ul.style.display = "none";}
+});
