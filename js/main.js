@@ -165,3 +165,4 @@ closeIcon.addEventListener("click", () => {
   ul.style.animationName = "fadeUp";
   // setTimeout(()=>{ul.style.display = "none";}
 });
+console.log("oi")
