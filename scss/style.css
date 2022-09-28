@@ -349,7 +349,7 @@ body .lower .grid-container-3 .content p {
     position: absolute;
     width: 100%;
     left: 0px;
-    top: 100%;
+    top: -10%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
